@@ -1,10 +1,10 @@
-import { click } from '@testing-library/user-event/dist/click';
+
 import React from 'react';
 import { useState } from 'react';
 
 function Navbar() {
     const [menuActive, setMenuActive] = useState(false);
-	const [pageInView, setPageInView] = useState('home')
+	
 
     const openMobileMenu = () => {
         setMenuActive(prevState => !prevState)
